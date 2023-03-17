@@ -27,17 +27,13 @@ function main() {
 
 
 function textKiir(){
-  let i;
   let txt = ""
-  
-
     txt += `<table>`
-    for (let index = 0; index < lista.length + 1; index++) {
-        let listai = lista[i];
+    for (let i = 0; i < lista.length + 1; i++) {
         txt += `<tr>
-            <td>${listai.nev}</td>
-            <td>${listai.tul1}</td>
-            <td>${listai.tul2}</td>
+            <td>${lista[i].nev}</td>
+            <td>${lista[i].tul1}</td>
+            <td>${lista[i].tul2}</td>
         </tr>`
     }
     txt += `</table>`;
