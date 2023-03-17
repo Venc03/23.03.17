@@ -20,6 +20,7 @@ let lista = [
 
 function main() {
   let txt = textKiir();
+  console.log(txt)
   const ARTICLE = $("article");
   ARTICLE.html(txt);
 }
@@ -29,7 +30,8 @@ function main() {
 function textKiir(){
   let txt = ""
     txt += `<table>`
-    for (let i = 0; i < lista.length + 1; i++) {
+    for (let i = 0; i < lista.length ; i++) {
+      console.log(lista[i].nev)
         txt += `<tr>
             <td>${lista[i].nev}</td>
             <td>${lista[i].tul1}</td>
